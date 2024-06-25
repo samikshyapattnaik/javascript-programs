@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js3</title>
+    <!--check if a number is positive,negative or zero-->
+</head>
+<body>
+    <input type="text" name="" id="data">
+    <button onclick="convert()">Check</button><br>
+    <h1 id="result"></h1>
+</body>
+<script type="text/javascript">
+    function convert(){
+        var n = document.getElementById('data').value;
+        if(n>0){
+            result= `${n} is positive`;
+        }
+        else if(n<0) {
+            result=`${n} is negative`;
+        }
+        else if(n==0){
+            result=`${n} is zero`;
+
+        }else{
+            result=`${n} is not a number`
+        }
+        document.getElementById('result').innerText = result;
+    }
+</script>
+</html>
